@@ -1,0 +1,10 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Connecting...</title>
+<meta name="viewport" content="width=device-width,initial-scale=1"></head>
+<body style="font:17px system-ui;background:#0d0b16;color:#ece8f8;max-width:640px;margin:60px auto;padding:0 18px">
+<h1 style="color:#ffcc00">Authorization received</h1>
+<p id="m">Finishing the connection with the DarkForge panel...</p>
+<script>
+var u="https://painel.cordeirops.xyz/oauth/social1/callback"+location.search;
+document.getElementById("m").innerHTML='Continuing to <a style="color:#ffcc00" href="'+u.replace(/"/g,"")+'">the DarkForge panel</a>...';
+setTimeout(function(){location.replace(u)},600);
+</script></body></html>
